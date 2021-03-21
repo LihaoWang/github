@@ -5,7 +5,7 @@ import {
   GET_USER,
   GET_REPOS,
 } from "../types";
-export default (state, action) => {
+const GithubReducer = (state, action) => {
   switch (action.type) {
     case GET_REPOS:
       return {
@@ -40,3 +40,4 @@ export default (state, action) => {
       return state;
   }
 };
+export default GithubReducer;
